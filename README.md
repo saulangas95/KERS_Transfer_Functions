@@ -17,7 +17,6 @@ These models are based on first-order approximations using experimentally derive
 
 - `TransferFunctions_KERS.m`: Main MATLAB script with both transfer function models and step responses.
 - `README.md`: Project description (this file).
-- `LICENSE`: (Optional) You may add a license such as MIT or Apache.
 
 ##  System Parameters
 
