@@ -1,6 +1,6 @@
 # Analysis of Kinetic Energy Recovery System Based on Four-Phase Interleaved Buck Converter for Vehicle Verification Processes
 
-**Manuscript ID:** IEEE LATAM Submission ID: XXXXX  
+**Manuscript ID:** IEEE LATAM Submission ID: 9490 
 **Authors:**  
 - Iván Reyes-Portillo  
 - Abraham Claudio  
