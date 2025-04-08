@@ -1,7 +1,7 @@
 # Analysis of Kinetic Energy Recovery System Based on Four-Phase Interleaved Buck Converter for Vehicle Verification Processes
 
-**ID 9490:** IEEE LATAM Manuscript ID: XXXXX  
-**Autores:**  
+**Manuscript ID:** IEEE LATAM Submission ID: XXXXX  
+**Authors:**  
 - Iván Reyes-Portillo  
 - Abraham Claudio  
 - Dora Castro  
@@ -10,38 +10,33 @@
 
 ---
 
-## 📁 Scripts incluidos
+## 📁 Included Scripts
 
-Este repositorio contiene todos los scripts necesarios para reproducir los resultados numéricos y figuras del artículo.
+This repository contains all scripts required to reproduce the simulation and numerical results presented in the article.
 
-| Script | Figura(s) reproducidas | Descripción |
-|--------|------------------------|-------------|
-| `TransferFunctions_KERS.m` | Fig. 5 | Genera funciones de transferencia desde velocidad del vehículo hacia velocidad angular del generador y voltaje de salida. Incluye respuestas al escalón para distintos perfiles de velocidad (60 a 120 km/h). |
-| `flywheel.m` | Fig. 6 (a, b, c) | Calcula masa, momento de inercia y energía almacenada para cinco diseños de volante de inercia. Genera gráficas de barras para comparar acero y aluminio. |
-| `senales.m` | Fig. 9 (a, b, c, d) | Carga señales experimentales desde `Graf-KERs.xlsx` y genera cuatro subgráficas: corriente de entrada, corrientes en inductores, corriente de salida y voltaje de salida. |
-
----
-
-## 📂 Archivos necesarios
-
-- `Graf-KERs.xlsx`: archivo de datos necesario para `senales.m`. Debe estar en la misma carpeta que el script.
-- `flywheel.m` y `TransferFunctions_KERS.m` son autónomos y no requieren archivos adicionales.
+| Script | Related Figure(s) | Description |
+|--------|-------------------|-------------|
+| `TransferFunctions_KERS.m` | Fig. 5 | Computes transfer functions from vehicle speed (km/h) to generator input speed (rpm) and output voltage (V). Includes step response plots for four velocity profiles. |
+| `flywheel.m` | Fig. 6 (a, b, c) | Calculates mass, moment of inertia, and stored kinetic energy for five flywheel design cases. Generates bar plots comparing steel and aluminum options. |
+| `senales.m` | Fig. 9 (a, b, c, d) | Loads waveform data from `Graf-KERs.xlsx` and plots four time-domain signals: input current, inductor currents, output current, and output voltage. |
 
 ---
 
-## 💻 Requisitos
+## 📂 Required Files
 
-- MATLAB R2018b o posterior.
-- No se requieren toolboxes adicionales.
+- `Graf-KERs.xlsx`: Required for `senales.m`. Place it in the same folder as the script.
+- `flywheel.m` and `TransferFunctions_KERS.m` are standalone and do not require additional files.
 
 ---
 
-## ✉️ Contacto
+## 💻 Requirements
 
-Para dudas o reproducción de resultados:  
-ivan.reyes@upslp.edu.mx  
+- MATLAB R2018b or later.
+- No additional toolboxes are required.
 
-Dora Castro-López  
-Luis Carreto-Hernández
+---
 
+## ✉️ Contact
 
+For questions or replication of results:  
+ivan.reyes@upslp.edu.mx
