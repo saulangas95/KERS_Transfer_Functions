@@ -1,46 +1,46 @@
-# KERS_Transfer_Functions
+# Analysis of Kinetic Energy Recovery System Based on Four-Phase Interleaved Buck Converter for Vehicle Verification Processes
 
-# KERS Transfer Function Modeling
+**ID 9490:** IEEE LATAM Manuscript ID: XXXXX  
+**Autores:**  
+- Iván Reyes-Portillo  
+- Abraham Claudio  
+- Dora Castro  
+- Saúl Méndez  
+- Luis Carreto  
 
-This repository contains MATLAB code to model the experimental behavior of a Kinetic Energy Recovery System (KERS) used in vehicle verification processes. The system includes a mechanical flywheel, a DC generator, and a four-phase interleaved buck converter.
+---
 
-##  Description
+## 📁 Scripts incluidos
 
-The main goal is to approximate the system dynamics from vehicle speed input to two key output variables:
+Este repositorio contiene todos los scripts necesarios para reproducir los resultados numéricos y figuras del artículo.
 
-1. **Angular speed at the generator input** (`ω_M` in rpm)
-2. **Generator output voltage** (`V_u` in volts)
+| Script | Figura(s) reproducidas | Descripción |
+|--------|------------------------|-------------|
+| `TransferFunctions_KERS.m` | Fig. 5 | Genera funciones de transferencia desde velocidad del vehículo hacia velocidad angular del generador y voltaje de salida. Incluye respuestas al escalón para distintos perfiles de velocidad (60 a 120 km/h). |
+| `flywheel.m` | Fig. 6 (a, b, c) | Calcula masa, momento de inercia y energía almacenada para cinco diseños de volante de inercia. Genera gráficas de barras para comparar acero y aluminio. |
+| `senales.m` | Fig. 9 (a, b, c, d) | Carga señales experimentales desde `Graf-KERs.xlsx` y genera cuatro subgráficas: corriente de entrada, corrientes en inductores, corriente de salida y voltaje de salida. |
 
-These models are based on first-order approximations using experimentally derived time constants.
+---
 
-##  Files
+## 📂 Archivos necesarios
 
-- `TransferFunctions_KERS.m`: Main MATLAB script with both transfer function models and step responses.
-- `README.md`: Project description (this file).
+- `Graf-KERs.xlsx`: archivo de datos necesario para `senales.m`. Debe estar en la misma carpeta que el script.
+- `flywheel.m` y `TransferFunctions_KERS.m` son autónomos y no requieren archivos adicionales.
 
-##  System Parameters
+---
 
-- Mechanical gain: `K_rpm = 18.72` rpm per km/h
-- Mechanical time constant: `τ_m = 1.5 s`
-- Generator constant: `k_m = 0.51 V/(rad/s)`
-- Electrical time constant: `τ_e = 0.000365 s`
+## 💻 Requisitos
 
-##  Output
+- MATLAB R2018b o posterior.
+- No se requieren toolboxes adicionales.
 
-The script generates two step response plots:
-- Generator angular speed (`ω_M`) vs. time
-- Generator voltage output (`V_u`) vs. time
+---
 
-##  Requirements
+## ✉️ Contacto
 
-- MATLAB R2020b or newer
-- Control Systems Toolbox
+Para dudas o reproducción de resultados:  
+ivan.reyes@upslp.edu.mx  
 
-##  Authors
-
-Iván Reyes-Portillo  
-Abraham Claudio-Sánchez  
-Saúl Méndez-Elizondo  
 Dora Castro-López  
 Luis Carreto-Hernández
 
